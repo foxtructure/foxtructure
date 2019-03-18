@@ -1,0 +1,44 @@
+{
+  "name": "foxtructure",
+  "version": "1.0.0",
+  "description": "This is tool for automatic building a structure of project, depending basically on npm, gulp and sass.",
+  "main": "index.js",
+  "scripts": {
+    "foxtructure": "npm run init:npm-install && npm run init:dirs",
+    "init:npm-install": "npm install",
+    "init:dirs": "mkdirp app/css app/fonts app/images app/js/libs app/scss/partials dist",
+    "init:files": "curl https://raw.githubusercontent.com/foxtructure/foxtructure/master/index.html -o app/index.html && curl https://raw.githubusercontent.com/foxtructure/foxtructure/master/index.html -o app/css/main.css",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foxtructure/foxtructure.git"
+  },
+  "keywords": [
+    "gulp",
+    "sass",
+    "task",
+    "runner",
+    "automatic",
+    "build",
+    "project",
+    "structure"
+  ],
+  "author": "Adam Reszka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/foxtructure/foxtructure/issues"
+  },
+  "homepage": "https://github.com/foxtructure/foxtructure#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "mkdirp": "^0.5.1"
+  }
+}
