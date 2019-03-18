@@ -7,14 +7,7 @@
     "foxtructure": "npm run init:npm-install && npm run init:dirs && npm run init:files",
     "init:npm-install": "npm install",
     "init:dirs": "mkdirp app/css app/fonts app/images app/js/libs app/scss/partials dist",
-    "init:files": "curl https://raw.githubusercontent.com/foxtructure/foxtructure/master/index.html -o app/index.html && 
-                   curl https://raw.githubusercontent.com/foxtructure/foxtructure/master/main.css -o app/css/main.css && 
-                   curl https://raw.githubusercontent.com/foxtructure/foxtructure/master/main.scss -o app/scss/main.scss && 
-                   curl https://raw.githubusercontent.com/foxtructure/foxtructure/master/reset.scss -o app/scss/partials/_reset.scss && 
-                   curl https://raw.githubusercontent.com/foxtructure/foxtructure/master/animate.scss -o app/scss/partials/_animate.scss && 
-                   curl https://raw.githubusercontent.com/foxtructure/foxtructure/master/variables.scss -o app/scss/partials/_variables.scss && 
-                   curl https://raw.githubusercontent.com/foxtructure/foxtructure/master/mixins.scss -o app/scss/partials/_mixins.scss && 
-                   curl https://raw.githubusercontent.com/foxtructure/foxtructure/master/layout.scss -o app/scss/partials/_layout.scss",
+    "init:files": "curl https://raw.githubusercontent.com/foxtructure/foxtructure/master/index.html -o app/index.html && curl https://raw.githubusercontent.com/foxtructure/foxtructure/master/main.css -o app/css/main.css && curl https://raw.githubusercontent.com/foxtructure/foxtructure/master/main.scss -o app/scss/main.scss && curl https://raw.githubusercontent.com/foxtructure/foxtructure/master/reset.scss -o app/scss/partials/_reset.scss && curl https://raw.githubusercontent.com/foxtructure/foxtructure/master/animate.scss -o app/scss/partials/_animate.scss && curl https://raw.githubusercontent.com/foxtructure/foxtructure/master/variables.scss -o app/scss/partials/_variables.scss && curl https://raw.githubusercontent.com/foxtructure/foxtructure/master/mixins.scss -o app/scss/partials/_mixins.scss && curl https://raw.githubusercontent.com/foxtructure/foxtructure/master/layout.scss -o app/scss/partials/_layout.scss && curl https://raw.githubusercontent.com/foxtructure/foxtructure/master/main.js -o app/js/main.js && curl https://raw.githubusercontent.com/foxtructure/foxtructure/master/gulpfile.js -o gulpfile.js && curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
     "test": "test"
   },
   "repository": {
