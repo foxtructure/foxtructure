@@ -4,10 +4,10 @@
   "description": "This is tool for automatic building a structure of project, depending basically on npm, gulp and sass.",
   "main": "index.js",
   "scripts": {
-    "foxtructure": "npm run init:npm-install && npm run init:dirs",
+    "foxtructure": "npm run init:npm-install && npm run init:dirs && npm run init:files",
     "init:npm-install": "npm install",
     "init:dirs": "mkdirp app/css app/fonts app/images app/js/libs app/scss/partials dist",
-    "init:files": "curl https://raw.githubusercontent.com/foxtructure/foxtructure/master/index.html -o app/index.html && curl https://raw.githubusercontent.com/foxtructure/foxtructure/master/index.html -o app/css/main.css",
+    "init:files": "curl https://raw.githubusercontent.com/foxtructure/foxtructure/master/index.html -o app/index.html && curl https://raw.githubusercontent.com/foxtructure/foxtructure/master/main.css -o app/css/main.css && curl https://raw.githubusercontent.com/foxtructure/foxtructure/master/main.scss -o app/scss/main.scss",
     "test": "test"
   },
   "repository": {
