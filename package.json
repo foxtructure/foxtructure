@@ -40,5 +40,8 @@
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.2",
     "mkdirp": "^0.5.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1"
   }
 }
